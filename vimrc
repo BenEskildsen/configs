@@ -6,7 +6,7 @@ if has("syntax")
   au BufNewFile,BufRead *.jq set filetype=javascript
 endif
 
-" Make tabs equal to 4 spaces
+" Make tabs equal to 2 spaces
 filetype plugin indent on
 set tabstop=2
 set shiftwidth=2

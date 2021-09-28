@@ -1,6 +1,8 @@
 
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default profile
 
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # highlight terminal:
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -16,3 +18,9 @@ PS1='\h\w:$(git branch 2>/dev/null | grep '^*' | colrm 1 2)$ '
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 export PATH
+
+# Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
+# export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
+# if [ -d "$GHC_DOT_APP" ]; then
+#   export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+# fi
