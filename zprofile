@@ -12,7 +12,18 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # regular terminals and in vim terminals
 # ALSO can't have the export here but must have it there AND
 # single quotes, not double quotes
-PS1='\h\w:$(git branch 2>/dev/null | grep '^*' | colrm 1 2)$ '
+# PS1='\h\w:$(git branch 2>/dev/null | grep '^*' | colrm 1 2)$ '
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '|%b'
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 
 # Setting PATH for Python 3.8
 # The original version is saved in .bash_profile.pysave
