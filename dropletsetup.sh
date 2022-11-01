@@ -5,6 +5,7 @@ sudo apt update
 # fresh install:
 # sudo apt-get remove docker docker-engine docker.io
 # sudo apt install docker.io
+# sudo snap install docker
 # docker compose:
 sudo apt-get install docker-compose-plugin
 
