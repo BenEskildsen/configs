@@ -4,8 +4,9 @@
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # highlight terminal:
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# commented out because in droplets they already have highlighting and this breaks it
+# export CLICOLOR=1
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # NOTE:
 # This has to be kept in sync with ~/.bashrc in order to work both in
