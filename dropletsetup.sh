@@ -14,7 +14,14 @@ sudo apt-get install nginx
 apt install net-tools
 
 # npm stuff
-sudo apt install nodejs npm
+sudo apt install npm
+hash -r # clears cache so that the path is right?
+npm install -g npm@latest
+
+# node stuff
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 npm install -g browserify
 
 # we're starting with this already
