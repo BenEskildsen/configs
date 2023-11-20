@@ -19,19 +19,19 @@ hash -r # clears cache so that the path is right?
 npm install -g npm@latest
 
 # node stuff
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-npm install -g browserify
+# npm install -g browserify
 
 # we're starting with this already
 # git clone https://github.com/BenEskildsen/configs.git
 # cd configs
-cp bash_profile ~/.bash_profile
-cp bashrc ~/.bashrc
+# cp bash_profile ~/.bash_profile
+# cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
-source ~/.bash_profile
-source ~/.bashrc
+# source ~/.bash_profile
+# source ~/.bashrc
 
 # git stuff
 git config --global user.email eskildsen.ben@gmail.com
