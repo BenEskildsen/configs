@@ -34,8 +34,11 @@ cp vimrc ~/.vimrc
 # source ~/.bashrc
 
 # git stuff
-git config --global user.email eskildsen.ben@gmail.com
-git config --global user.name BenEskildsen
+git config --global user.email ben.eskilstark@gmail.com
+git config --global user.name BenEskilstark
+ssh-keygen -t rsa -b 4096 -C "ben.eskilstark@gmail.com"
+# note that you then have to add the id_rsa.pub to github
+# See Notes/Github for how to do this
 
 # ports
 ufw allow http
