@@ -16,4 +16,15 @@ PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
-# export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"Z
+
+# bun completions
+[ -s "/Users/ben/.bun/_bun" ] && source "/Users/ben/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# ruby version manager (to run latest version and not pre-installed one)
+eval "$(rbenv init - zsh)"
+

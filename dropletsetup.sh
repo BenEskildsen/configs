@@ -19,7 +19,7 @@ hash -r # clears cache so that the path is right?
 npm install -g npm@latest
 
 # node stuff
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 npm install -g browserify
