@@ -22,20 +22,23 @@ npm install -g npm@latest
 curl -sL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-npm install -g browserify
+# npm install -g browserify
 
 # we're starting with this already
 # git clone https://github.com/BenEskildsen/configs.git
 # cd configs
-cp bash_profile ~/.bash_profile
-cp bashrc ~/.bashrc
+# cp bash_profile ~/.bash_profile
+# cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
-source ~/.bash_profile
-source ~/.bashrc
+# source ~/.bash_profile
+# source ~/.bashrc
 
 # git stuff
-git config --global user.email eskildsen.ben@gmail.com
-git config --global user.name BenEskildsen
+git config --global user.email ben.eskilstark@gmail.com
+git config --global user.name BenEskilstark
+ssh-keygen -t rsa -b 4096 -C "ben.eskilstark@gmail.com"
+# note that you then have to add the id_rsa.pub to github
+# See Notes/Github for how to do this
 
 # ports
 ufw allow http
