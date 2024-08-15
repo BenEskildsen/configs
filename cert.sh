@@ -6,8 +6,18 @@
 # sudo ln -s /snap/bin/certbot /usr/bin/certbot
 # snap set certbot trust-plugin-with-root=ok
 
+
 # NOTE: must generate a DO token in the dashboard under api and save it
 # to the right location before these commands will run
+# https://certbot-dns-digitalocean.readthedocs.io/en/stable/
+# generate a DO token in the dashboard under API
+# put it in a file at ~/.secrets/certbot/digitalocean.ini like:
+# DigitalOcean API credentials used by Certbot (without the leading #'s obviously)
+# dns_digitalocean_token = 0000111122223333444455....
+# then run
+
+# chmod go-rwx ~/.secrets/certbot/digitalocean.ini
+
 
 # from: https://certbot-dns-digitalocean.readthedocs.io/en/stable/
 # sudo snap install certbot-dns-digitalocean
