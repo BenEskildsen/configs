@@ -4,6 +4,7 @@
 # sudo apt-get remove certbot
 # sudo snap install --classic certbot
 # sudo ln -s /snap/bin/certbot /usr/bin/certbot
+# snap set certbot trust-plugin-with-root=ok
 
 # NOTE: must generate a DO token in the dashboard under api and save it
 # to the right location before these commands will run
